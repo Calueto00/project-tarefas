@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>TodoApp</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <img src="/assets/images/linode.svg" alt="" srcset="">
+            <small style="color: white">Paulo Code</small>
+        </div>
+        <div class="content">
+            <nav>
+                <a href="#" class="btn btn-primary">
+                    Criar Tarefa
+                </a>
+            </nav>
+            <main>
+                <section class="graph">
+                    <div class="graph_header">
+                        <h2>Progresso do dia</h2>
+                        <div class="graph_header_line"></div>
+                        <div class="graph_header_date">
+                           < data>
+                        </div>
+                    </div>
+                    <div class="graph_header_subtitle">Tarefas: <b>3/6</b></div>
+                    <div class="graph_placeholder">
+
+                    </div>
+                    <div class="task_left_footer">
+                        <i class="fa fa-light fa-circle-question" style="color: #f0f1f3;"></i>
+                        Restam 3 tarefas para serem realizadas
+                    </div>
+
+                </section>
+                <section class="list">
+                    <div class="list_header">
+                        <select name="" id="" class="list-header-select">
+                            <option value="1">Todas as tarefas</option>
+                        </select>
+                    </div>
+                    <div class="task_list">
+                        <div class="task">
+                            <div class="title">
+                                <input type="checkbox" name="" id="">
+                                <div class="task_title">
+                                    Titulo da tarefa
+                                </div>
+                            </div>
+                            <div class="priority">
+                                <div class="sphere"></div>
+                                <h6>prioridades</h6>
+                            </div>
+                            <div class="actions">
+                                <a href="#">
+                                    <i class="fa fa-duotone fa-pen-to-square"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-solid fa-trash-can"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="task">
+                            <div class="title">
+                                <input type="checkbox" name="" id="">
+                                <div class="task_title">
+                                    Titulo da tarefa
+                                </div>
+                            </div>
+                            <div class="priority">
+                                <div class="sphere"></div>
+                                <h6>prioridades</h6>
+                            </div>
+                            <div class="actions">
+                                <a href="#">
+                                    <i class="fa fa-duotone fa-pen-to-square"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-solid fa-trash-can"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

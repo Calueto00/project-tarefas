@@ -1,0 +1,199 @@
+:root{
+    --background-light:#f0f2fa;
+    --background-white:#f6f5ff;
+    --text-dark:#0a0040;
+    --color-primary:#6143ff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Rubik, sans-serif;
+    color: var(--text-dark);
+}
+
+body{
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.sidebar{
+    width: 100px;
+    background-color: var(--color-primary);
+}
+nav{
+    height: 100px;
+    background-color: var(--background-light);
+    width: calc(100vw - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 20px;
+}
+.btn{
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+}
+a.btn{
+    text-decoration: none;
+    margin-left: 5px;
+}
+.btn-primary{
+    background-color: var(--color-primary);
+    color: white;
+}
+main{
+    display: flex;
+    padding: 20px;
+}
+section.graph{
+    width: 33%;
+    height: 100%;
+    padding: 5px;
+}
+.list-header-select{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: var(--text-dark);
+}
+.graph_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ h2{
+   flex: 2;
+    display: inline-block;
+    font-size: 18px;
+}
+.graph_header_date{
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+}
+.graph_header_line{
+    width: 100px;
+    background-color: black;
+    height: 2px;
+    margin-top: 16px;
+    background: rgba(0, 0, 0, .2);
+}
+.graph_header_subtitle{
+    margin-top: 10px;
+}
+.graph_placeholder{
+    background-color: #ccc;
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 45px;
+    background: url('/assets/images/grafico.png');
+    background-size: contain;
+}
+.task_left_footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.list{
+    padding: 5px 15px;
+    flex: 1;
+}
+.list_header{
+    display: flex;
+}
+.task_list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+}
+.task{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 15px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--background-light);
+}
+.task:hover{
+    background-color: var(--background-light);
+}
+.task_title{
+    padding-left: 10px;
+    font-weight: bold;
+}
+.title{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.priority, .actions{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex: 1;
+
+}
+.actions a{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.sphere{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.actions{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#task_section{
+    margin: auto;
+    padding-top: 20px;
+}
+#task_section>h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.input_area{
+    display: block;
+    margin: 10px 0 20px 0;
+}
+.input_area>label{
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.input_area>input, .input_area>select{
+    height: 40px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+}
+.input_area> textarea{
+    height: 120px;
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
